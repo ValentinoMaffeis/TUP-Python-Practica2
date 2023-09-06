@@ -4,11 +4,17 @@
 def maximo_basico(a: float, b: float) -> float:
     """Toma dos números y devuelve el mayor.
 
+
     Restricciones:
         - Utilizar IF
         - No utilizar ELSE
         - No utilizar la función max
     """
+    if a>b:
+        return a
+    elif b>a:
+        return b
+
 
 
 # NO MODIFICAR - INICIO
@@ -24,6 +30,7 @@ def maximo_libreria(a: float, b: float) -> float:
     """Re-escribir utilizando el built-in max.
     Referencia: https://docs.python.org/3/library/functions.html#max
     """
+    return max(a,b)
 
 
 # NO MODIFICAR - INICIO
@@ -39,6 +46,7 @@ def maximo_ternario(a: float, b: float) -> float:
     """Re-escribir utilizando el operador ternario.
     Referencia: https://docs.python.org/3/reference/expressions.html#conditional-expressions # noqa: E501
     """
+    return b if b>a else a
 
 
 # NO MODIFICAR - INICIO
